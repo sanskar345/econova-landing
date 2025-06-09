@@ -1,0 +1,4240 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "landingPageContent",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:12:47.683Z",
+        "updatedAt": "2025-06-07T10:03:34.565Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T10:03:34.565Z",
+        "firstPublishedAt": "2025-06-07T07:12:48.268Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/landingPageContent"
+      },
+      "displayField": "title",
+      "name": "Landing Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "defaultValue": {
+            "en-US": "EcoNova Launch"
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "defaultValue": {
+            "en-US": "econova"
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sections",
+          "name": "sections",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "language",
+          "name": "language",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+            {
+              "in": [
+                "en",
+                "es"
+              ]
+            }
+          ],
+          "defaultValue": {
+            "en-US": "en"
+          },
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "section",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:16:06.137Z",
+        "updatedAt": "2025-06-07T07:16:06.672Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-07T07:16:06.672Z",
+        "firstPublishedAt": "2025-06-07T07:16:06.672Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/section"
+      },
+      "displayField": "type",
+      "name": "Section",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "in": [
+                "hero",
+                "features",
+                "testimonials",
+                "productShowcase",
+                "cta",
+                "footer"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "content",
+          "name": "content",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "heroSection",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:18:23.711Z",
+        "updatedAt": "2025-06-07T07:18:24.441Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-07T07:18:24.441Z",
+        "firstPublishedAt": "2025-06-07T07:18:24.441Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/heroSection"
+      },
+      "displayField": "headline",
+      "name": "Hero Section",
+      "description": "",
+      "fields": [
+        {
+          "id": "headline",
+          "name": "headline",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subHeadline",
+          "name": "subHeadline",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundImage",
+          "name": "backgroundImage",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "ctaButton",
+          "name": "ctaButton",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "featuresSection",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:19:29.257Z",
+        "updatedAt": "2025-06-07T11:01:20.580Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T11:01:20.580Z",
+        "firstPublishedAt": "2025-06-07T07:19:29.779Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/featuresSection"
+      },
+      "displayField": "title",
+      "name": "Features Section",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "features",
+          "name": "features",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "featureItem",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:21:06.209Z",
+        "updatedAt": "2025-06-07T07:21:06.775Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-07T07:21:06.775Z",
+        "firstPublishedAt": "2025-06-07T07:21:06.775Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/featureItem"
+      },
+      "displayField": "title",
+      "name": "Feature Item",
+      "description": "",
+      "fields": [
+        {
+          "id": "icon",
+          "name": "icon",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "testimonialsSection",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:22:02.536Z",
+        "updatedAt": "2025-06-07T11:04:19.260Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T11:04:19.260Z",
+        "firstPublishedAt": "2025-06-07T07:22:03.087Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/testimonialsSection"
+      },
+      "displayField": "title",
+      "name": "Testimonials Section",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "testimonials",
+          "name": "testimonials",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "testimonialItem",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:22:54.690Z",
+        "updatedAt": "2025-06-07T07:22:55.235Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-07T07:22:55.235Z",
+        "firstPublishedAt": "2025-06-07T07:22:55.235Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/testimonialItem"
+      },
+      "displayField": "quote",
+      "name": "Testimonial Item",
+      "description": "",
+      "fields": [
+        {
+          "id": "quote",
+          "name": "quote",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "author",
+          "name": "author",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "productShowcaseSection",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:23:54.171Z",
+        "updatedAt": "2025-06-07T07:23:54.727Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-07T07:23:54.727Z",
+        "firstPublishedAt": "2025-06-07T07:23:54.727Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/productShowcaseSection"
+      },
+      "displayField": "title",
+      "name": "Product Showcase Section",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "images",
+          "name": "images",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Asset"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "ctaSection",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:24:39.522Z",
+        "updatedAt": "2025-06-07T11:07:36.584Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T11:07:36.584Z",
+        "firstPublishedAt": "2025-06-07T07:24:40.080Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/ctaSection"
+      },
+      "displayField": "headline",
+      "name": "CTA Section",
+      "description": "",
+      "fields": [
+        {
+          "id": "headline",
+          "name": "headline",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Text",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaButton",
+          "name": "ctaButton",
+          "type": "Link",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "footerSection",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:25:15.832Z",
+        "updatedAt": "2025-06-08T07:58:48.875Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2025-06-08T07:58:48.875Z",
+        "firstPublishedAt": "2025-06-07T07:25:16.319Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/footerSection"
+      },
+      "displayField": "copyright",
+      "name": "Footer Section",
+      "description": "",
+      "fields": [
+        {
+          "id": "copyright",
+          "name": "copyright",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "socialLinks",
+          "name": "socialLinks",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "links",
+          "name": "links",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "reusableCtaBlock",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:26:14.082Z",
+        "updatedAt": "2025-06-07T10:11:27.530Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T10:11:27.530Z",
+        "firstPublishedAt": "2025-06-07T07:26:14.603Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/reusableCtaBlock"
+      },
+      "displayField": "text",
+      "name": "Reusable CTA Block",
+      "description": "",
+      "fields": [
+        {
+          "id": "text",
+          "name": "text",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "url",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "authorProfile",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:26:56.353Z",
+        "updatedAt": "2025-06-07T07:26:57.002Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-07T07:26:57.002Z",
+        "firstPublishedAt": "2025-06-07T07:26:57.002Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/authorProfile"
+      },
+      "displayField": "name",
+      "name": "Author Profile",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "name",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "socialLink",
+        "type": "ContentType",
+        "createdAt": "2025-06-07T07:27:58.407Z",
+        "updatedAt": "2025-06-07T07:27:58.993Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2025-06-07T07:27:58.993Z",
+        "firstPublishedAt": "2025-06-07T07:27:58.993Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/content_types/socialLink"
+      },
+      "displayField": "url",
+      "name": "Social Link",
+      "description": "",
+      "fields": [
+        {
+          "id": "icon",
+          "name": "icon",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "url",
+          "name": "url",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-06-07T07:12:48.382Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T10:03:35.673Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "landingPageContent",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sections",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "language",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-07T07:16:06.738Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T07:16:07.587Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "section",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "type",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-07T07:18:24.546Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T07:18:25.467Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "heroSection",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "headline",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "subHeadline",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "backgroundImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaButton",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-06-07T07:19:29.866Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T11:01:21.665Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "featuresSection",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "features",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-07T07:21:06.859Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T07:21:07.789Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "featureItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "icon",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-06-07T07:22:03.193Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T11:04:20.300Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "testimonialsSection",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "testimonials",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-07T07:22:55.313Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T07:22:56.193Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "testimonialItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "quote",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-07T07:23:54.874Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T07:23:55.687Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "productShowcaseSection",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "images",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-06-07T07:24:40.166Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T11:07:37.537Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "ctaSection",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "headline",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaButton",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 14,
+        "createdAt": "2025-06-07T07:25:16.417Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-08T07:58:50.103Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "footerSection",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "copyright",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "socialLinks",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "links",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-06-07T07:26:14.677Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T10:11:28.334Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "reusableCtaBlock",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "text",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-07T07:26:57.081Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T07:26:58.383Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "authorProfile",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p1ri1ym1pf2w",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2025-06-07T07:27:59.068Z",
+        "createdBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-06-07T07:27:59.907Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1sIyR3i57GiFwCqDgR5DIN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "socialLink",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "icon",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "5TEQc4G8SOQRfxhBOkPDGb",
+        "type": "Entry",
+        "createdAt": "2025-06-07T07:30:46.849Z",
+        "updatedAt": "2025-06-07T10:58:50.425Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2025-06-07T10:58:50.425Z",
+        "firstPublishedAt": "2025-06-07T07:59:12.015Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "heroSection"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/5TEQc4G8SOQRfxhBOkPDGb"
+      },
+      "fields": {
+        "headline": {
+          "en-US": "Discover EcoNova: Sustainable Innovation",
+          "es": "Descubre EcoNova: Innovación Sostenible"
+        },
+        "subHeadline": {
+          "en-US": "Revolutionizing green technology for a better planet",
+          "es": "Revolucionando la tecnología verde para un planeta mejor"
+        },
+        "backgroundImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4SX352SM2VBSyi6S1g2u8f"
+            }
+          }
+        },
+        "ctaButton": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5ftAHyLlpaxgt235yAwlLO"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "oN74k8UGUlvA0uejfvGJa",
+        "type": "Entry",
+        "createdAt": "2025-06-07T08:00:00.934Z",
+        "updatedAt": "2025-06-08T08:14:22.758Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2025-06-08T08:14:22.758Z",
+        "firstPublishedAt": "2025-06-07T10:05:23.503Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPageContent"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/oN74k8UGUlvA0uejfvGJa"
+      },
+      "fields": {
+        "title": {
+          "en-US": "EcoNova Product Launch",
+          "es": "Lanzamiento del Producto EcoNova"
+        },
+        "slug": {
+          "en-US": "econova",
+          "es": "econova"
+        },
+        "sections": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6BJw8CMp4V1Xl5nUtXLaUo"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4zFWa7oIyx4pP8DUNUgAaP"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6ixqG0peolQjgGuGHDOaZA"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "SJCh8d7FDIpofp2jqlJEw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2hqwFRWkrw9fj9xsbqD2Ay"
+              }
+            }
+          ],
+          "es": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6BJw8CMp4V1Xl5nUtXLaUo"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4zFWa7oIyx4pP8DUNUgAaP"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6ixqG0peolQjgGuGHDOaZA"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "SJCh8d7FDIpofp2jqlJEw"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2hqwFRWkrw9fj9xsbqD2Ay"
+              }
+            }
+          ]
+        },
+        "language": {
+          "en-US": "en",
+          "es": "es"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "6BJw8CMp4V1Xl5nUtXLaUo",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:05:51.371Z",
+        "updatedAt": "2025-06-07T11:11:27.965Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T11:11:27.965Z",
+        "firstPublishedAt": "2025-06-07T11:11:27.965Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "section"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/6BJw8CMp4V1Xl5nUtXLaUo"
+      },
+      "fields": {
+        "type": {
+          "en-US": "hero"
+        },
+        "content": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5TEQc4G8SOQRfxhBOkPDGb"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "6ttDWSL57WLzg85CdcrLq2",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:27:01.383Z",
+        "updatedAt": "2025-06-07T10:30:18.707Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-06-07T10:30:18.707Z",
+        "firstPublishedAt": "2025-06-07T10:30:18.707Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "reusableCtaBlock"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/6ttDWSL57WLzg85CdcrLq2"
+      },
+      "fields": {
+        "text": {
+          "en-US": "Explore EcoNova",
+          "es": "Explora EcoNova"
+        },
+        "url": {
+          "en-US": "/product",
+          "es": "/producto"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "5ftAHyLlpaxgt235yAwlLO",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:30:31.071Z",
+        "updatedAt": "2025-06-07T10:30:59.643Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T10:30:59.643Z",
+        "firstPublishedAt": "2025-06-07T10:30:59.643Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "reusableCtaBlock"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/5ftAHyLlpaxgt235yAwlLO"
+      },
+      "fields": {
+        "text": {
+          "en-US": "Start Your Journey",
+          "es": "Inicia Tu Viaje"
+        },
+        "url": {
+          "en-US": "/signup",
+          "es": "/registro"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "24uFYHMMCaB4ZePn4t1QbG",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:31:44.277Z",
+        "updatedAt": "2025-06-07T10:32:11.926Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T10:32:11.926Z",
+        "firstPublishedAt": "2025-06-07T10:32:11.926Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "authorProfile"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/24uFYHMMCaB4ZePn4t1QbG"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Miguel Torres",
+          "es": "Miguel Torres"
+        },
+        "title": {
+          "en-US": "Environmental Engineer",
+          "es": "Ingeniero Ambiental"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "6ZNbcdMqvdcXp0giU6jLUG",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:32:29.575Z",
+        "updatedAt": "2025-06-07T10:32:59.781Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-07T10:32:59.781Z",
+        "firstPublishedAt": "2025-06-07T10:32:59.781Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "authorProfile"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/6ZNbcdMqvdcXp0giU6jLUG"
+      },
+      "fields": {
+        "name": {
+          "en-US": "Emma Larson",
+          "es": "Emma Larson"
+        },
+        "title": {
+          "en-US": "Founder, Eco Innovations",
+          "es": "Fundadora, Innovaciones Eco"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "4GyvqshJcpxQWhkAp6x5CH",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:39:12.197Z",
+        "updatedAt": "2025-06-07T10:41:50.780Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-06-07T10:41:50.780Z",
+        "firstPublishedAt": "2025-06-07T10:41:50.780Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featureItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/4GyvqshJcpxQWhkAp6x5CH"
+      },
+      "fields": {
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "691x81TyNaIbS8xhsW0srX"
+            }
+          }
+        },
+        "title": {
+          "en-US": "Ultra-Efficient Power",
+          "es": "Potencia Ultraeficiente"
+        },
+        "description": {
+          "en-US": "Saves up to 50% energy with cutting-edge technology.",
+          "es": "Ahorra hasta un 50% de energía con tecnología de vanguardia."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "6YMf8vJK6pYSXcziP4Vbf2",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:42:20.369Z",
+        "updatedAt": "2025-06-07T10:44:31.978Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-06-07T10:44:31.978Z",
+        "firstPublishedAt": "2025-06-07T10:44:31.978Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featureItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/6YMf8vJK6pYSXcziP4Vbf2"
+      },
+      "fields": {
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7FYJxvGehTz1qp5HHBcKcJ"
+            }
+          }
+        },
+        "title": {
+          "en-US": "Intuitive Design",
+          "es": "Diseño Intuitivo"
+        },
+        "description": {
+          "en-US": "User-friendly interface for seamless interaction.",
+          "es": "Interfaz amigable para una interacción fluida."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "12E7JdxLSvpNP2If2ndg8H",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:44:50.389Z",
+        "updatedAt": "2025-06-07T10:47:27.109Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-06-07T10:47:27.109Z",
+        "firstPublishedAt": "2025-06-07T10:47:27.109Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featureItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/12E7JdxLSvpNP2If2ndg8H"
+      },
+      "fields": {
+        "icon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4fYPTJkhjLaYzZUGPnowb8"
+            }
+          }
+        },
+        "title": {
+          "en-US": "Sustainable Materials",
+          "es": "Materiales Sostenibles"
+        },
+        "description": {
+          "en-US": "Crafted from 100% recycled and biodegradable materials.",
+          "es": "Fabricado con materiales 100% reciclados y biodegradables."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "5yXnkELXIuGzBtWbkjqA4e",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:50:19.889Z",
+        "updatedAt": "2025-06-07T10:55:12.550Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2025-06-07T10:55:12.550Z",
+        "firstPublishedAt": "2025-06-07T10:55:12.550Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "testimonialItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/5yXnkELXIuGzBtWbkjqA4e"
+      },
+      "fields": {
+        "quote": {
+          "en-US": "EcoNova has revolutionized how we manage energy in our offices!",
+          "es": "¡EcoNova ha revolucionado cómo gestionamos la energía en nuestras oficinas!"
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6ZNbcdMqvdcXp0giU6jLUG"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "79tdaV0N0rqRjk7zBHlEa3",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:55:35.471Z",
+        "updatedAt": "2025-06-07T10:56:19.530Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-07T10:56:19.530Z",
+        "firstPublishedAt": "2025-06-07T10:56:19.530Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "testimonialItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/79tdaV0N0rqRjk7zBHlEa3"
+      },
+      "fields": {
+        "quote": {
+          "en-US": "A must-have for any eco-conscious business.",
+          "es": "Imprescindible para cualquier negocio consciente del medio ambiente."
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "24uFYHMMCaB4ZePn4t1QbG"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "7d4V6WTr27PlGS2aGuAD5B",
+        "type": "Entry",
+        "createdAt": "2025-06-07T10:59:24.388Z",
+        "updatedAt": "2025-06-07T11:02:28.420Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-06-07T11:02:28.420Z",
+        "firstPublishedAt": "2025-06-07T11:01:58.642Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featuresSection"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/7d4V6WTr27PlGS2aGuAD5B"
+      },
+      "fields": {
+        "title": {
+          "en-US": "EcoNova’s Key Features",
+          "es": "Características Clave de EcoNova"
+        },
+        "features": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "12E7JdxLSvpNP2If2ndg8H"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6YMf8vJK6pYSXcziP4Vbf2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4GyvqshJcpxQWhkAp6x5CH"
+              }
+            }
+          ],
+          "es": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "12E7JdxLSvpNP2If2ndg8H"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6YMf8vJK6pYSXcziP4Vbf2"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4GyvqshJcpxQWhkAp6x5CH"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "3MnILQPsdAz0gIqLtF1O3p",
+        "type": "Entry",
+        "createdAt": "2025-06-07T11:03:43.042Z",
+        "updatedAt": "2025-06-07T11:06:24.061Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-06-07T11:06:24.061Z",
+        "firstPublishedAt": "2025-06-07T11:06:24.061Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "testimonialsSection"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/3MnILQPsdAz0gIqLtF1O3p"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Hear from Our Users",
+          "es": "Escucha a Nuestros Usuarios"
+        },
+        "testimonials": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "79tdaV0N0rqRjk7zBHlEa3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5yXnkELXIuGzBtWbkjqA4e"
+              }
+            }
+          ],
+          "es": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "79tdaV0N0rqRjk7zBHlEa3"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5yXnkELXIuGzBtWbkjqA4e"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "4ocHiTGadtThzDyVoW4v19",
+        "type": "Entry",
+        "createdAt": "2025-06-07T11:06:38.368Z",
+        "updatedAt": "2025-06-07T11:08:12.710Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-06-07T11:08:12.710Z",
+        "firstPublishedAt": "2025-06-07T11:08:12.710Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "ctaSection"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/4ocHiTGadtThzDyVoW4v19"
+      },
+      "fields": {
+        "headline": {
+          "en-US": "Embrace Sustainability Today",
+          "es": "Adopta la Sostenibilidad Hoy"
+        },
+        "description": {
+          "en-US": "Join thousands of eco-conscious users with EcoNova’s innovative solutions.",
+          "es": "Únete a miles de usuarios conscientes del medio ambiente con las soluciones innovadoras de EcoNova."
+        },
+        "ctaButton": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6ttDWSL57WLzg85CdcrLq2"
+            }
+          },
+          "es": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6ttDWSL57WLzg85CdcrLq2"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "4zFWa7oIyx4pP8DUNUgAaP",
+        "type": "Entry",
+        "createdAt": "2025-06-07T11:11:43.103Z",
+        "updatedAt": "2025-06-07T11:12:24.298Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T11:12:24.298Z",
+        "firstPublishedAt": "2025-06-07T11:12:24.298Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "section"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/4zFWa7oIyx4pP8DUNUgAaP"
+      },
+      "fields": {
+        "type": {
+          "en-US": "features"
+        },
+        "content": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7d4V6WTr27PlGS2aGuAD5B"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "SJCh8d7FDIpofp2jqlJEw",
+        "type": "Entry",
+        "createdAt": "2025-06-07T11:12:33.919Z",
+        "updatedAt": "2025-06-07T11:12:56.279Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-06-07T11:12:56.279Z",
+        "firstPublishedAt": "2025-06-07T11:12:56.279Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "section"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/SJCh8d7FDIpofp2jqlJEw"
+      },
+      "fields": {
+        "type": {
+          "en-US": "cta"
+        },
+        "content": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "4ocHiTGadtThzDyVoW4v19"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "6ixqG0peolQjgGuGHDOaZA",
+        "type": "Entry",
+        "createdAt": "2025-06-07T11:13:04.951Z",
+        "updatedAt": "2025-06-07T11:13:28.885Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-07T11:13:28.885Z",
+        "firstPublishedAt": "2025-06-07T11:13:28.885Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "section"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/6ixqG0peolQjgGuGHDOaZA"
+      },
+      "fields": {
+        "type": {
+          "en-US": "testimonials"
+        },
+        "content": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3MnILQPsdAz0gIqLtF1O3p"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "2hqwFRWkrw9fj9xsbqD2Ay",
+        "type": "Entry",
+        "createdAt": "2025-06-08T07:56:51.809Z",
+        "updatedAt": "2025-06-08T08:00:02.932Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-06-08T08:00:02.932Z",
+        "firstPublishedAt": "2025-06-08T08:00:02.932Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "footerSection"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/entries/2hqwFRWkrw9fj9xsbqD2Ay"
+      },
+      "fields": {
+        "copyright": {
+          "en-US": "© 2025 EcoNova. All rights reserved",
+          "es": "© 2025 EcoNova. Todos los derechos reservados."
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "4SX352SM2VBSyi6S1g2u8f",
+        "type": "Asset",
+        "createdAt": "2025-06-07T07:55:21.089Z",
+        "updatedAt": "2025-06-08T07:09:12.904Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2025-06-08T07:09:12.904Z",
+        "firstPublishedAt": "2025-06-07T07:58:18.575Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/assets/4SX352SM2VBSyi6S1g2u8f"
+      },
+      "fields": {
+        "title": {
+          "en-US": "EcoNova Hero Image",
+          "es": "Imagen principal de EcoNova"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p1ri1ym1pf2w/4SX352SM2VBSyi6S1g2u8f/04084842b03a6f170f76fbc0c4d8fa1d/background-image.png",
+            "details": {
+              "size": 2841246,
+              "image": {
+                "width": 1536,
+                "height": 1024
+              }
+            },
+            "fileName": "background-image.png",
+            "contentType": "image/png"
+          },
+          "es": {
+            "url": "//images.ctfassets.net/p1ri1ym1pf2w/4SX352SM2VBSyi6S1g2u8f/78f0ddab5a7ffacaccb8851c4090e7dd/background-image.png",
+            "details": {
+              "size": 2841246,
+              "image": {
+                "width": 1536,
+                "height": 1024
+              }
+            },
+            "fileName": "background-image.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "691x81TyNaIbS8xhsW0srX",
+        "type": "Asset",
+        "createdAt": "2025-06-07T10:39:17.377Z",
+        "updatedAt": "2025-06-07T10:41:11.331Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2025-06-07T10:41:11.331Z",
+        "firstPublishedAt": "2025-06-07T10:40:05.995Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/assets/691x81TyNaIbS8xhsW0srX"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Energy Icon",
+          "es": "feature4"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p1ri1ym1pf2w/691x81TyNaIbS8xhsW0srX/1cf83373d624c69876ac8fa988a17f1d/feature4.png",
+            "details": {
+              "size": 1850697,
+              "image": {
+                "width": 1024,
+                "height": 1024
+              }
+            },
+            "fileName": "feature4.png",
+            "contentType": "image/png"
+          },
+          "es": {
+            "url": "//images.ctfassets.net/p1ri1ym1pf2w/691x81TyNaIbS8xhsW0srX/91f90aa929cc3561cc6b91729ad95743/feature4.png",
+            "details": {
+              "size": 1850697,
+              "image": {
+                "width": 1024,
+                "height": 1024
+              }
+            },
+            "fileName": "feature4.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "7FYJxvGehTz1qp5HHBcKcJ",
+        "type": "Asset",
+        "createdAt": "2025-06-07T10:42:36.278Z",
+        "updatedAt": "2025-06-07T10:43:49.283Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2025-06-07T10:43:49.283Z",
+        "firstPublishedAt": "2025-06-07T10:43:49.283Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/assets/7FYJxvGehTz1qp5HHBcKcJ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Smart Design Icon",
+          "es": "Smart Design Icon"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p1ri1ym1pf2w/7FYJxvGehTz1qp5HHBcKcJ/c08584fc78cdc65905575e9c313d1c53/feature1.png",
+            "details": {
+              "size": 2122275,
+              "image": {
+                "width": 1024,
+                "height": 1024
+              }
+            },
+            "fileName": "feature1.png",
+            "contentType": "image/png"
+          },
+          "es": {
+            "url": "//images.ctfassets.net/p1ri1ym1pf2w/7FYJxvGehTz1qp5HHBcKcJ/44e5408081929ebff1f55c6f5642a798/feature1.png",
+            "details": {
+              "size": 2122275,
+              "image": {
+                "width": 1024,
+                "height": 1024
+              }
+            },
+            "fileName": "feature1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "id": "4fYPTJkhjLaYzZUGPnowb8",
+        "type": "Asset",
+        "createdAt": "2025-06-07T10:44:58.742Z",
+        "updatedAt": "2025-06-07T10:46:09.664Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2025-06-07T10:46:09.664Z",
+        "firstPublishedAt": "2025-06-07T10:46:00.547Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published",
+            "es": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/p1ri1ym1pf2w/environments/master/assets/4fYPTJkhjLaYzZUGPnowb8"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Eco-Friendly Icon",
+          "es": "Eco-Friendly Icon"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p1ri1ym1pf2w/4fYPTJkhjLaYzZUGPnowb8/825c44f9f7e563efea23c2ca644ef37a/feature2.png",
+            "details": {
+              "size": 1635945,
+              "image": {
+                "width": 1024,
+                "height": 1024
+              }
+            },
+            "fileName": "feature2.png",
+            "contentType": "image/png"
+          },
+          "es": {
+            "url": "//images.ctfassets.net/p1ri1ym1pf2w/4fYPTJkhjLaYzZUGPnowb8/f71a245137b6b0521e139c85ce36d422/feature2.png",
+            "details": {
+              "size": 1635945,
+              "image": {
+                "width": 1024,
+                "height": 1024
+              }
+            },
+            "fileName": "feature2.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "4LULHTZmR4N5UbhxTaPu6l",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "b051c59b-5002-4926-a567-7f375c1139e5"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "createdAt": "2025-06-07T06:28:56Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedAt": "2025-06-07T06:28:56Z"
+      }
+    },
+    {
+      "name": "Spanish",
+      "code": "es",
+      "fallbackCode": null,
+      "default": false,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "10XRZ0dmxe2w4scJBaAASp",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "b051c59b-5002-4926-a567-7f375c1139e5"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "createdAt": "2025-06-07T07:44:13Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedAt": "2025-06-07T07:44:13Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "4Mo5ritkyxaBvEGbaWP4X7",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p1ri1ym1pf2w"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "createdAt": "2025-06-07T06:28:56Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1sIyR3i57GiFwCqDgR5DIN"
+          }
+        },
+        "updatedAt": "2025-06-07T06:28:56Z"
+      }
+    }
+  ]
+}
