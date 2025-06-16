@@ -1,4 +1,5 @@
 import { createClient } from 'contentful';
+import { draftMode } from 'next/headers';
 
 // Map Next.js locales to Contentful locales
 const localeMap: { [key: string]: string } = {
@@ -6,13 +7,21 @@ const localeMap: { [key: string]: string } = {
   es: 'es',
 };
 
-const client = createClient({
-  space: process.env.CONTENTFUL_SPACE_ID!,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
-});
+async function getContentfulClient() {
+  const isDraftMode = (await draftMode()).isEnabled;
+
+  return createClient({
+    space: process.env.CONTENTFUL_SPACE_ID!,
+    accessToken: isDraftMode
+      ? process.env.CONTENTFUL_PREVIEW_TOKEN!
+      : process.env.CONTENTFUL_ACCESS_TOKEN!,
+    host: isDraftMode ? 'preview.contentful.com' : 'cdn.contentful.com',
+  });
+}
 
 export async function fetchLandingPage(slug: string, locale: string) {
   const contentfulLocale = localeMap[locale] || 'en-US';
+  const client = await getContentfulClient();
 
   try {
     const response = await client.getEntries({

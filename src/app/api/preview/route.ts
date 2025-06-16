@@ -5,11 +5,12 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const secret = searchParams.get('secret');
   const slug = searchParams.get('slug');
+  const locale = searchParams.get('locale') || 'en';
 
   if (secret !== process.env.CONTENTFUL_PREVIEW_SECRET || !slug) {
-    return new Response('Invalid token', { status: 401 });
+    return new Response('Invalid request', { status: 401 });
   }
 
-  draftMode().enable();
-  redirect(`/en/${slug}`);
+  (await draftMode()).enable();
+  redirect(`/${locale}/${slug}`);
 }
