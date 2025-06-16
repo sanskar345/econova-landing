@@ -18,8 +18,6 @@ export default async function LandingPage({ params }: { params: { slug: string; 
 
   const page: LandingPage | null = await fetchLandingPage(slug, locale) as LandingPage | null;
 
-  console.log('Fetched page:', page);
-
   if (!page) {
     return <div className="text-center py-12">Error: Page not found</div>;
   }

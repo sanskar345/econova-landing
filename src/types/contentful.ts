@@ -20,24 +20,24 @@ export interface TestimonialItem {
 }
 
 export interface HeroSection {
-  headline: string;
+  headline?: string;
   subHeadline?: string;
   backgroundImage?: { url: string; description?: string };
   ctaButton?: ReusableCtaBlock;
 }
 
 export interface FeaturesSection {
-  title: string;
+  title?: string;
   featuresCollection?: { items: FeatureItem[] };
 }
 
 export interface TestimonialsSection {
-  title: string;
+  title?: string;
   testimonialsCollection?: { items: TestimonialItem[] };
 }
 
 export interface CtaSection {
-  headline: string;
+  headline?: string;
   description?: string;
   ctaButton?: ReusableCtaBlock;
 }
