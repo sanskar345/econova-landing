@@ -99,6 +99,10 @@ function normalizeContent(content: any) {
         description: content.fields.description,
         ctaButton: content.fields.ctaButton?.fields,
       };
+    case 'footerSection':
+      return {
+        copyright: content.fields.copyright
+      }
     default:
       return {};
   }
