@@ -4,6 +4,7 @@ import FeaturesSection from '@/components/FeaturesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CtaSection from '@/components/CtaSection';
 import type { LandingPage } from '@/types/contentful';
+import Footer from '@/components/Footer';
 
 export const revalidate = 60; // ISR: Revalidate every 60 seconds
 
@@ -35,6 +36,8 @@ export default async function LandingPage({ params }: { params: { slug: string; 
             return <TestimonialsSection key={index} {...section.content} />;
           case 'cta':
             return <CtaSection key={index} {...section.content} />;
+          case 'footer': 
+            return <Footer key={index} {...section.content} />;
           default:
             return null;
         }

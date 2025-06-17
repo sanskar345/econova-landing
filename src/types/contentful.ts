@@ -53,3 +53,7 @@ export interface LandingPage {
   language: string;
   sectionsCollection?: { items: Section[] };
 }
+
+export interface Footer {
+  copyright?: string;
+}

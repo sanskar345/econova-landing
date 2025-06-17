@@ -1,4 +1,4 @@
-import { createClient } from 'contentful';
+import { GraphQLClient } from 'graphql-request';
 import { draftMode } from 'next/headers';
 
 // Map Next.js locales to Contentful locales
@@ -7,16 +7,109 @@ const localeMap: { [key: string]: string } = {
   es: 'es',
 };
 
+const query = `
+  query GetLandingPageContent($locale: String! = "en-US") {
+    landingPageContentCollection(limit: 1, locale: $locale) {
+      items {
+        title
+        slug
+        language
+        sectionsCollection(limit: 7) {
+          items {
+            ... on Section {
+              type
+              content {
+                ... on HeroSection {
+                  headline
+                  subHeadline
+                  backgroundImage {
+                    url
+                    title
+                  }
+                  ctaButton {
+                    ... on ReusableCtaBlock {
+                      text
+                      url
+                    }
+                  }
+                }
+                ... on FeaturesSection {
+                  title
+                  featuresCollection(limit: 3) {
+                    items {
+                      ... on FeatureItem {
+                        title
+                        description
+                        icon {
+                          url
+                          title
+                        }
+                      }
+                    }
+                  }
+                }
+                ... on TestimonialsSection {
+                  title
+                  testimonialsCollection(limit: 3) {
+                    items {
+                      ... on TestimonialItem {
+                        quote
+                        author {
+                          ... on AuthorProfile {
+                            name
+                            title
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                ... on ProductShowcaseSection {
+                  title
+                  description
+                  imagesCollection(limit: 3) {
+                    items {
+                      url
+                      title
+                    }
+                  }
+                }
+                ... on CtaSection {
+                  headline
+                  description
+                  ctaButton {
+                    ... on ReusableCtaBlock {
+                      text
+                      url
+                    }
+                  }
+                }
+                ... on FooterSection {
+                  copyright
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
 async function getContentfulClient() {
   const isDraftMode = (await draftMode()).isEnabled;
 
-  return createClient({
-    space: process.env.CONTENTFUL_SPACE_ID!,
-    accessToken: isDraftMode
-      ? process.env.CONTENTFUL_PREVIEW_TOKEN!
-      : process.env.CONTENTFUL_ACCESS_TOKEN!,
-    host: isDraftMode ? 'preview.contentful.com' : 'cdn.contentful.com',
-  });
+  return new GraphQLClient(
+    `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
+    {
+      headers: {
+        Authorization: `Bearer ${isDraftMode
+          ? process.env.CONTENTFUL_PREVIEW_TOKEN!
+          : process.env.CONTENTFUL_ACCESS_TOKEN!
+          }`,
+      },
+    }
+  );
 }
 
 export async function fetchLandingPage(slug: string, locale: string) {
@@ -24,82 +117,19 @@ export async function fetchLandingPage(slug: string, locale: string) {
   const client = await getContentfulClient();
 
   try {
-    const response = await client.getEntries({
-      content_type: 'landingPageContent',
-      'fields.slug': slug,
-      include: 10,
-      locale: contentfulLocale,
-    });
+    const response = await client.request<{
+      landingPageContentCollection: {
+        items: any[];
+      };
+    }>(query, { slug, locale: contentfulLocale });
 
-    if (response.items.length === 0) {
+    if (response.landingPageContentCollection.items.length === 0) {
       return null;
     }
-
-    const entry = response.items[0];
-    return {
-      title: entry.fields.title,
-      slug: entry.fields.slug,
-      language: entry.fields.language,
-      sectionsCollection: {
-        items: ((entry.fields.sections as any[]) || []).map((section: any) => ({
-          type: section.fields.type,
-          content: normalizeContent(section.fields.content),
-        })),
-      },
-    };
+    console.log('Fetched page:', response.landingPageContentCollection.items[0]?.sectionsCollection?.items);
+    return response.landingPageContentCollection.items[0];
   } catch (error) {
-    console.error('Contentful fetch error:', error);
+    console.error('Contentful GraphQL fetch error:', error);
     return null;
-  }
-}
-
-// Normalize content to match expected structure
-function normalizeContent(content: any) {
-  const contentType = content?.sys?.contentType?.sys?.id;
-
-  switch (contentType) {
-    case 'heroSection':
-      return {
-        headline: content.fields.headline,
-        subHeadline: content.fields.subHeadline,
-        backgroundImage: content.fields.backgroundImage?.fields?.file
-          ? {
-            url: `https:${content.fields.backgroundImage.fields.file.url}`,
-            description: content.fields.backgroundImage.fields.description,
-          }
-          : null,
-        ctaButton: content.fields.ctaButton?.fields,
-      };
-    case 'featuresSection':
-      return {
-        title: content.fields.title,
-        featuresCollection: {
-          items: (content.fields.features || []).map((feature: any) => ({
-            icon: feature.fields.icon?.fields?.file
-              ? { url: `https:${feature.fields.icon.fields.file.url}` }
-              : null,
-            title: feature.fields.title,
-            description: feature.fields.description,
-          })),
-        },
-      };
-    case 'testimonialsSection':
-      return {
-        title: content.fields.title,
-        testimonialsCollection: {
-          items: (content.fields.testimonials || []).map((testimonial: any) => ({
-            quote: testimonial.fields.quote,
-            author: testimonial.fields.author?.fields,
-          })),
-        },
-      };
-    case 'ctaSection':
-      return {
-        headline: content.fields.headline,
-        description: content.fields.description,
-        ctaButton: content.fields.ctaButton?.fields,
-      };
-    default:
-      return {};
   }
 }
